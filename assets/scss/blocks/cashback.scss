@@ -1,9 +1,18 @@
 .cashback-container {
     padding: 80px 0;
+
+    @media (max-width: $screenS) {
+        padding: 50px 0;
+    }
 }
 
 .cashback {
     display: flex;
+    justify-content: center;
+
+    @media (max-width: $screenS) {
+        flex-direction: column;
+    }
 }
 
 .cashback-item {
@@ -18,14 +27,36 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @media (max-width: $screenS) {
+        background-position: calc(100% - 20px) center;
+        background-size: 100px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 40px 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .cashback-item--bag {
     background-position: calc(100% - 30px) calc(100% - 30px);
+    
+    @media (max-width: $screenS) {
+        background-position: calc(100% - 20px) calc(100% - 20px);
+    }
 }
 
 .cashback-item--car {
-    background-position: 100% center;
+    background-position: 125% center;
+
+    @media (max-width: $screenS) {
+        background-position: calc(100% - 20px) center;
+        background-size: 120px;
+    }
 }
 
 .cashback-item__desc {
@@ -33,5 +64,10 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;    
-    color: #FFFFFF;
+    color: $white;
+
+    @media (max-width: $screenS) {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }

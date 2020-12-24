@@ -3,6 +3,31 @@ document.addEventListener('DOMContentLoaded', function(){
         let self = $(this);
         range(self);
     });
+
+
+    let mySwiper = new Swiper('.js-slider .swiper-container', {
+        loop: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          1140: {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+          }
+        }
+      })
 });
 
 function range (self) {

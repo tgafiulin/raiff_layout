@@ -3,36 +3,8 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media(max-width: $screenS) {
+        max-width: 400px;
+    }
 }
-
-// .col-8-12 {
-//     width: 652px;
-
-//     @media (max-width: $th) {
-//         width: 620px;
-//     }
-
-//     @media (max-width: $tv) {
-//         width: 688px;
-//     }
-
-//     @media (max-width: $mobile) {
-//         width: 100%;
-//     }
-// }
-
-// .col-10-12 {
-//     width: 820px;
-
-//     @media (max-width: $th) {
-//         width: 780px;
-//     }
-
-//     @media (max-width: $tv) {
-//         width: 688px;
-//     }
-
-//     @media (max-width: $mobile) {
-//         width: 100%;
-//     }
-// }

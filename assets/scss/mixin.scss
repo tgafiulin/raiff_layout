@@ -1,0 +1,26 @@
+// Компактный нативный скролл
+@mixin scrollbar {
+    // Firefox
+    scrollbar-width: thin;
+    scrollbar-color: #7A92B2 fade(#808185, 25);
+
+    // IE
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar-track { 
+        border-radius: 4px;
+        background: $gray;
+    }
+
+    // Webkit
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 4px;
+        background: fade(#808185, 25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #808185;
+        border-radius: 3px;
+    }
+}

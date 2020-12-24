@@ -33,18 +33,20 @@ h1 {
     max-width: 520px;
     margin-top: 15px;
 
-    span {
-        display: inline-block;
-        margin-top: 15px;
-        font-weight: 900;
-        font-size: 108px;
-        line-height: 1;
-        margin-bottom: 20px;
+    @media (max-width: $screenS) {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.2px;
+        max-width: 300px;
     }
 }
 
 .h2-block {
     margin-bottom: 50px;
+
+    @media (max-width: $screenS) {
+        margin-bottom: 40px;
+    }
 
     h2 {
         font-weight: 700;
@@ -52,6 +54,15 @@ h1 {
         line-height: 54px;
         text-align: center;
         color: $lightBlack;
+
+        @media (max-width: $screenS) {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .slider-container & {
+            color: $white;
+        }
     }
     
     .h2-block__note {
@@ -61,5 +72,14 @@ h1 {
         line-height: 26px;
         text-align: center;
         color: #808185;
+
+        @media (max-width: $screenS) {
+            font-size: 16px;
+            line-height: 24px;      
+        }
+
+        .slider-container & {
+            color: $white;
+        }
     }
 }

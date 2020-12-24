@@ -2,8 +2,18 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $screenS) {
+        padding: 15px;
+    }
 }
 
 .header__contacts {
     text-align: right;
+
+    @media (max-width: $screenS) {
+        svg {
+            width: 24px;
+        }
+    }
 }

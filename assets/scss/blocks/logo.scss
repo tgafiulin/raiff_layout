@@ -1,12 +1,31 @@
 .logo-container {
     display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .logo--raif {
     padding-right: 35px;
     border-right: 1px solid $gray;
+
+    @media (max-width: $screenS) {
+        max-width: 133px;
+        padding-right: 30px;
+    }
 }
 
 .logo--visa {
     padding-left: 35px;
+
+    @media (max-width: $screenS) {
+        max-width: 75px;
+        padding-left: 30px;
+    }
 }

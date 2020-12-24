@@ -1,0 +1,127 @@
+.slider-container {
+    padding: 80px 0;
+    background: #424548;
+
+    @media (max-width: $screenS) {
+        padding: 50px 0 30px;
+    }
+}
+
+.slider-container__btn {
+    text-align: center;
+}
+
+.slide-item {
+    height: 380px;
+    background: $lightBlack;
+    border-radius: 14px;
+
+    background-repeat: no-repeat;
+    background-position: center 90px;
+
+    position: relative;
+
+    @media (max-width: $screenS) {
+        background-position: center 65px;
+        height: 340px;
+        background-size: 150px;
+    }
+}
+
+.slide-item__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 80px;
+
+    @media (max-width: $screenS) {
+        background-position: center 55px;
+        background-size: 165px;
+    }
+}
+
+.slider {
+    position: relative;
+    margin-bottom: 70px;
+
+    @media (max-width: $screenS) {
+        margin-bottom: 30px;
+    }
+}
+
+.swiper-container {
+    max-width: calc(100% - 2 * 72px);
+
+    @media (max-width: $screenS) {
+        max-width: 100%;
+    }
+}
+
+.swiper-slide {
+    @media (max-width: $screenS) {
+        max-width: 210px;
+        width: 100%;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+
+    background: $yellow;
+    width: 42px;
+    height: 42px;
+    outline: none;
+    margin-bottom: 70px;
+
+    border-radius: 15px;
+
+    &:after {
+        display: none;
+    }
+
+    @media (max-width: $screenS) {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.swiper-pagination {
+    margin: 30px auto 0;
+
+    @media (max-width: $screenS) {
+        display: flex!important;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #808185;
+    box-sizing: border-box;
+    background: transparent;
+    margin-right: 7px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.swiper-pagination-bullet-active {
+    background: $yellow;
+}
