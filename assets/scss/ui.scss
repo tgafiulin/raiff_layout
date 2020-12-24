@@ -95,17 +95,18 @@
     }
 
 }
-/** FF*/
-input[type="range"]::-moz-range-progress {
-  background-color: #43e5f7; 
+
+input[type=range]::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: $yellow;
 }
-input[type="range"]::-moz-range-track {  
-  background-color: #9a905d;
-}
-/* IE*/
-input[type="range"]::-ms-fill-lower {
-  background-color: #43e5f7; 
-}
-input[type="range"]::-ms-fill-upper {  
-  background-color: #9a905d;
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: $yellow;
 }
