@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/cqi3nlu.css">
+
+    <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <div class="logo-container">
+                <div class="logo logo--raif">
+                    <img src="./assets/images/raif_logo.png" alt="Raiffeisen Logo">
+                </div>
+                <div class="logo logo--visa">
+                    <img src="./assets/images/visa_logo.png" alt="Visa Logo">
+                </div>
+            </div>
+        </div>
+        <div class="header__contacts">
+            <a href="tel:+78007707562" class="link-tel">8 800 770-75-62</a>
+            <p class="gray">Бесплатно по России</p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="first-screen">
+            <div class="first-screen__back">
+                <img src="./assets/images/promo.jpg" class="only-desktop" alt="">
+            </div>
+            <div class="first-screen__content">
+                <div class="utp">
+                    Бесплатное обслуживание
+                    <span class="utp-arrow"></span>
+                </div>
+                <h1>
+                    Кредитная карта с кэшбэком
+                    <span>1,5%</span>
+                </h1>
+                <a href="#" class="btn">Оформить онлайн</a>
+            </div>
+        </div>
+        <div class="features-container">
+            <div class="container">
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-item__title">1,5<span>%</span></div>
+                        <div class="feature-item__desc">кэшбэк рублями</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-item__title">0₽</div>
+                        <div class="feature-item__desc">обслуживание</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-item__title"><span>до</span> 52 <span>дней</span></div>
+                        <div class="feature-item__desc">без процентов</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-item__title"><span>до</span> 600 <span>тыс. ₽</span></div>
+                        <div class="feature-item__desc">кредитный лимит</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cashback-container">
+            <div class="container">
+                <div class="h2-block">
+                    <h2>Кэшбэк 1,5% без ограничений</h2>
+                </div>
+                <div class="cashback">
+                    <div class="cashback-item cashback-item--money" style="background-image: url('./assets/images/money.png');">
+                        <div class="cashback-item__desc">Кэшбэк<br />рублями</div>
+                    </div>
+                    <div class="cashback-item cashback-item--bag" style="background-image: url('./assets/images/bag.png');">
+                        <div class="cashback-item__desc">За любые<br />покупки</div>
+                    </div>
+                    <div class="cashback-item cashback-item--car" style="background-image: url('./assets/images/car.png');">
+                        <div class="cashback-item__desc">Без лимитов<br />и ограничений</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-container">
+            <div class="container">
+                <div class="h2-block">
+                    <h2>Возьмите дополнительный кредит</h2>
+                    <div class="h2-block__note">Кредит на любые цели. Получите решение за 2 минуты</div>
+                </div>
+                <div class="calculator">
+                    <div class="calculator__content">
+                        <div class="calculator-item js-calculator">
+                            <div class="calculator-item__row">
+                                <div class="calculator-item__title">Какая сумма нужна?</div>
+                                <div class="calculator-item__result"><span class="js-result">500 000</span> ₽</div>
+                            </div>
+                            <div class="calculator-item__input">
+                                <input type="range" min="90000" max="2000000" value="90000" class="js-input" data-color-from="#FEE600" data-color-to="#E1E1E3">
+                            </div>
+                            <div class="calculator-item__row">
+                                <div class="calculator-item__extreme">90 000 ₽</div>
+                                <div class="calculator-item__extreme">2 000 000 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="calculator-item js-calculator">
+                            <div class="calculator-item__row">
+                                <div class="calculator-item__title">На какой срок?</div>
+                                <div class="calculator-item__result"><span class="js-result">36</span> мес</div>
+                            </div>
+                            <div class="calculator-item__input">
+                                <input type="range" min="13" max="60" value="13" class="js-input" data-color-from="#FEE600" data-color-to="#E1E1E3">
+                            </div>
+                            <div class="calculator-item__row">
+                                <div class="calculator-item__extreme">13 мес</div>
+                                <div class="calculator-item__extreme">60 мес</div>
+                            </div>
+                        </div>
+
+                        <div class="calculator__note">Расчет платежа приведен с учетом финансовой защиты. Не является офертой.</div>
+                    </div>
+                    <div class="calculator__calc">
+                        <div class="calculator__info">
+                            <div>10,99%</div>
+                            <span>ваша ставка</span>
+                        </div>
+                        <div class="calculator__info">
+                            <div>14 265 ₽</div>
+                            <span>ежемесячный платеж</span>
+                        </div>
+                        <a href="#" class="btn">Получить кредит</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="container">
+                <div class="h2-block">
+                    <h2>Оформите карту онлайн</h2>
+                </div>
+                <div class="form-features">
+                    <div class="form-features-item">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+    <script type="text/javascript" src="./js/script.min.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+</body>
+</html>

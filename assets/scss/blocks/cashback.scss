@@ -1,0 +1,37 @@
+.cashback-container {
+    padding: 80px 0;
+}
+
+.cashback {
+    display: flex;
+}
+
+.cashback-item {
+    background: #29476B;
+    border-radius: 14px;
+    padding: 60px 30px;
+    margin-right: 24px;
+    width: calc(100% / 3 - 2 * 24px);
+    background-position: calc(100% - 30px) center;
+    background-repeat: no-repeat;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.cashback-item--bag {
+    background-position: calc(100% - 30px) calc(100% - 30px);
+}
+
+.cashback-item--car {
+    background-position: 100% center;
+}
+
+.cashback-item__desc {
+    font-family: $fontSecond;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;    
+    color: #FFFFFF;
+}

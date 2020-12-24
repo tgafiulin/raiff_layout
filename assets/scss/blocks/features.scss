@@ -1,0 +1,33 @@
+.features-container {
+    padding: 50px 0;
+    border-bottom: 1px solid $gray;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;    
+    color: $lightBlack;
+
+    span {
+        font-size: 36px;
+    }
+}
+
+.feature-item__desc {
+    font-family: $fontSecond;
+    font-size: 16px;
+    line-height: 24px;    
+    text-align: center;
+    color: #808185;
+}
